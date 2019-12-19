@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>Site Title</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>无法加载</strong>
+  </noscript>
+  <div id="app"></div>
+
+  <script src='./exceptionless.min.js'></script>
+  <script>
+    var client = exceptionless.ExceptionlessClient.default;
+    client.config.apiKey = 'SyHsi5jw3xe2WOe3JlY1sLJMB2uz3W8Mw9UdnWMv';
+    client.config.serverUrl = 'https://config.exceptionless.io'
+
+    // window.client.createLog('app.logger', '错误信息', 'Error').addTags('Tracking System Management Error').submit()
+  </script>
+</body>
+
+</html>
